@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="javascript.js"></script>
+        <title>TH</title>
+    </head>
+
+    <body>
+        <nav id="navi">	
+			<div id="logo">
+				<h1>TH</h1>
+			</div>
+			<div id="page-links">
+				<ul>
+                    <li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+	    </nav>
+
+        <main id="container">
+            <div id="form-message">
+                <p>Please fill out the form to leave a message:</p>
+            </div>
+            
+            <div id="form-area">
+                <form>
+                    <label for="text">name</label>
+                    <input type="text" value=" " />
+                </form>
+
+                <form>
+                    <label for="email" value="text">email</label>
+                    <input type="text" value=" " />
+                </form>
+
+                <form>
+                    <textarea></textarea>
+                </form>
+
+                <label class="newsletter">subscribe to newsletter
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+                <form method="post">
+                    <input id="infogather" type="submit" value="submit" onClick = "alert(successmessage);">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
