@@ -1,6 +1,7 @@
 /* general styling */
 
 body {
+    background: repeat center url("img/blue-rock-texture.png");
     background-color: #45474B;
 }
 
@@ -15,7 +16,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 20%;
+    flex-wrap: nowrap;
+    gap: 15%;
     height: 50px;
     font-family: sans-serif;
 	background: #F5F7F8;
@@ -25,10 +27,12 @@ footer {
 #logo {
     margin-left: 1%;
     font-family: sans-serif;
+    font-size: larger;
 }
 
 #page-links {
     padding-left: 10%;
+
 }
 
 #navi ul li {
@@ -39,19 +43,22 @@ footer {
 }
 
 #navi a:link {
+    color:#40677e;
     text-decoration: none;
 }
 
 #navi a:visited {
+    color:#3f0d3b;
     text-decoration: none;
 }
 
 #navi a:hover {
+    font-size: larger;
     text-decoration: none;
 }
 
 #navi a:active {
-    text-decoration: none;
+    text-decoration: solid;
 }
 
 
@@ -60,57 +67,54 @@ footer {
 #container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin-top: 1%;
 	margin-bottom: 1%;
-	box-shadow: inset 0px 2px 6px #76818580;
 	border: 2.5em solid #000000;
 	border-width: 5px;
-    overflow: hidden;
 }
 
 #banner01 {
-    height: 100px;
+    height: 125px;
     background-color: #F4CE14;
     text-align: center;
 	border-bottom: .25em solid #000000;
-	box-shadow: inset 0px 0px 10px #45474B;
+	box-shadow: inset 0px 0px 5px #72302d73;
 }
 
 #banner01 h1 {
-    padding-left: 50px;
-    font-size: 2.75em;
-    color: #45474B;
-    text-shadow:#F5F7F8 1px 2px;
+    padding-bottom: 15px;
+    font-size: 3em;
+    color: #495E57;
 }
 
 #center-content {
     display: flex;
     background-color: #FFFFFF;
     justify-content: space-evenly;
+    align-items: center;
+    padding: .5%;
 }
 
 #center-content p {
-    padding-top: 15%;
+    padding-top: 5%;
     font-size: 1.75em;
     text-align: center;
     font-family: sans-serif;
 }
 
 #banner02 {
-    height: 100px;
+    height: 125px;
     background-color: #F4CE14;
     text-align: center;
 	border-top: .25em solid #000000;
-	box-shadow: inset 0px 0px 10px #72302d73;
+	box-shadow: inset 0px 0px 5px #72302d73;
 }
 
 #banner02 h3 {
-    padding-left: 50px;
-    color: #495E57 ;
-    text-shadow:#F5F7F8 1px 2px;
+    padding-bottom: 20px;
+    color: #495E57;
     font-style: italic;
-    font-size: 2em;
+    font-size: 2.25em;
 }
 
 #socials {
@@ -145,10 +149,11 @@ footer {
 #my-name {
     display: flex;
     justify-content: center;
+    background-color: #495E57;
 }
 #my-name h2 {
     color: #ffffff;
-    font-size: 1.75em;
+    font-size: 2em;
     font-family: sans-serif;
 }
 
@@ -163,6 +168,10 @@ footer {
 #about-me p {
     font-size: 1.5em;
     font-family: sans-serif;
+}
+
+#emoji {
+    font-size: 2.5em;
 }
 
 
@@ -190,15 +199,78 @@ div.img-gallery h2 {
     padding-left: 20px;
     font-size: 2.5em;
     color: #45474B;
-    text-shadow:#F5F7F8 1px 1px;
 }
 div.img-gallery p {
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-family: sans-serif;
     color: #45474B;
-    text-shadow:#F5F7F8 1px 1px;
     padding-left: 20px;
 }
 
 
 /* contact page */
+
+input[type="text"] { 
+    padding: 5px 5px; 
+    line-height: 15px; 
+    box-sizing: border-box;
+    border: 2px solid #45474B;
+}
+
+#form-message {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 2em;
+    background-color: #F4CE14;
+}
+
+#form-message p {
+    color:#45474B;
+}
+
+#form-area {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 25px;
+    align-items: center;
+    padding: 5%;
+    background-color: #495E57;
+}
+
+#form-area form {
+    color:#F5F7F8;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    border: 2px solid #45474B;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+
+.newsletter {
+    padding: 1%;
+    font-size: 1.25em;
+    font-family: sans-serif;
+    color:#F5F7F8;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #40677e;
+    border: none;
+    color: white;
+    padding: 15%;
+    font-size: large;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 5%;
+    cursor: pointer;
+  }
