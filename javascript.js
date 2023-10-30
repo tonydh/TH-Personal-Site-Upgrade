@@ -1,1 +1,3 @@
-const successmessage = `submitted successfully!`;
+function successMessage(){
+    const successmessage = alert(`submitted successfully!`);
+}
